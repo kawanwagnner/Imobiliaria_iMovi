@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iMovi</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap CSS; -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- Bootstrap JS; -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap bootstrap-touch-slider Slider Main Style Sheet -->
+  <link href="bootstrap-touch-slider.css" rel="stylesheet" media="all">
+
+  <!-- Ref. CSS; -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3 fw-semibold pb-4" href="#">
+          <img class="w-100 ms-5" src="images/imovi-icon.png" alt="..."> iMovi
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+          aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li><a class="nav-link black-color active" aria-current="page" href="#">Home</a></li>
+            <li><a class="nav-link black-color" href="#">Projetos</a></li>
+            <li><a class="nav-link black-color" href="#">Imóveis</a></li>
+            <li><a class="nav-link black-color" href="#">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div class="container" id="slider-container">
+
+      <div id="carouselIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/banner-1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Casas Planejadas</h5>
+              <a href="#" class="btn btn-dark">Ver Projetos</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Casas Complexas</h5>
+              <a href="#" class="btn btn-dark">Ver Projetos</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Casas Criativas</h5>
+              <a href="#" class="btn btn-dark">Ver Projetos</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+          <i class="bi bi-chevron-compact-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+          <i class="bi bi-chevron-compact-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- MINI BANNERS -->
+      <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+        <div class="row p-2">
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-layers color-white"></i>
+              <div class="card-body">
+                <h5 class="card-title color-white">Você também participa.</h5>
+                <p class="card-text grey-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn btn-dark">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-lightning-charge color-white"></i>
+              <div class="card-body">
+                <h5 class="card-title color-white">Adiatamentos de entregas.</h5>
+                <p class="card-text grey-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn btn-dark">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-box color-white"></i>
+              <div class="card-body">
+                <h5 class="card-title color-white">Projetos
+                  Completos</h5>
+                <p class="card-text grey-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn btn-dark">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESTAQUES -->
+    <div class="container" id="featured-container">
+      <div class="col-12">
+        <h2 class="title color-white">Trabalhos em destaque</h2>
+        <p class="subtitle color-grey">Conheça nossos projetos mais desafiadores</p>
+      </div>
+      <div class="col-12" id="featured-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="images/project-1.jpg" alt="Projeto 1" class="img-fluid">
+            <div class="banner-content">
+              <p class="white-color">Categoria</p>
+              <h3>Nome do Projeto</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="images/project-2.jpg" alt="Projeto 2" class="img-fluid">
+            <div class="banner-content">
+              <p class="white-color">Categoria</p>
+              <h3>Nome do Projeto</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="images/project-3.jpg" alt="Projeto 3" class="img-fluid">
+            <div class="banner-content">
+              <p class="white-color">Categoria</p>
+              <h3>Nome do Projeto</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="images/project-4.jpg" alt="Projeto 4" class="img-fluid">
+            <div class="banner-content">
+              <p class="white-color">Categoria</p>
+              <h3>Nome do Projeto</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="images/project-5.jpg" alt="Projeto 5" class="img-fluid">
+            <div class="banner-content">
+              <p class="white-color">Categoria</p>
+              <h3>Nome do Projeto</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="images/project-6.jpg" alt="Projeto 6" class="img-fluid">
+            <div class="banner-content">
+              <p class="white-color">Categoria</p>
+              <h3>Nome do Projeto</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="container" id="info-container">
+      <div class="col-12">
+        <h2 class="title color-white">Detalhes importantes</h2>
+        <p class="subtitle color-grey">Saiba mais sobre a experiência da nosssa incrível equipe</p>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-5" id="info-banner">
+            <img src="images/infobanner.jpg" alt="Informações da Empresa" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-7 bg-sub-white" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title color-white">Esses dados fazem a diferença</h2>
+                <p class="subtitle color-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odit
+                  quos modi in atque, cum, quam natus a iure eveniet accusamus at autem delectus animi! Omnis labore
+                  alias error modi!</p>
+              </div>
+              <div class="col-12" id="info-numbers">
+                <div class="row">
+                  <div class="col-4">
+                    <h3 class="color-white">18</h3>
+                    <p class="color-grey">Anos na construção civil</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="color-white">95</h3>
+                    <p class="color-grey">Projetos executados</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="color-white">639</h3>
+                    <p class="color-grey">Clientes</p>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-dark">Saber Mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-black" id="footer">
+      <div class="container">
+        <div class="row">
+          <!-- FOOTER TOP -->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <h2>
+                  iMovi
+                </h2>
+              </div>
+              <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER DETAILS -->
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="news-container">
+                <h4>Fique por dentro das novidades</h4>
+                <p class="color-grey">
+                  Inscreva-se para saber em primeira mão
+                </p>
+                <form>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Digite o seu e-mail" />
+                  </div>
+                  <button class="btn btn-dark">Inscrever</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="color-grey">(81)9999-9999</p>
+                <p class="color-grey">contato@imovi.com</p>
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="row">
+                  <h4>Você pode estar buscando por:</h4>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="color-grey">Projetos</a></li>
+                      <li><a href="#" class="color-grey">Imóveis</a></li>
+                      <li><a href="#" class="color-grey">Vendas</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="color-grey">Contratar</a></li>
+                      <li>
+                        <a href="#" class="color-grey">Trabalhe conosco</a>
+                      </li>
+                      <li><a href="#" class="color-grey">Contato</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER BOTTOM -->
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-3">
+                <p class="color-grey">iMovi &copy; 2023</p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p class="color-grey">
+                  Realizamos o seu projeto com
+                  <i class="bi bi-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
